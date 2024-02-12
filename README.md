@@ -1,38 +1,53 @@
 # WISE-Light-Curves
 WISE light curves of ultra cool dwarfs analyzed with Lomb-Scargle periodogram.
 
-                        """"
-                        name =            common identifier from source file
-                        designation =     WISE designation
-                        ra =              mean ra from filtered data
-                        ra_err =          mean ra error from filtered data
-                        dec =             mean dec from fintered data
-                        dec_err =         mean dec error from filtered data                        
-                        w1_mean =         mean w1mpro from filtered data
-                        w1_mean_err =     mean w1sigmpro from filtered data
-                        w1_median =       median w1mpro from filtered data
-                        w1_median_err =   median w1sigmpro from filtered data
-                        w1_min =          minimum w1mpro from filtered data
-                        w1_min_err =      w1sigmpro of w1_min detection
-                        w1_max =          maximum w1mpro from filtered data
-                        w1_max_err =      w1sigmpro of w1_max detection
-                        w1_snr =          mean w1signal to noise ratio
-                        w1_snr_min =      min w1signal to noise ratio
-                        w1_snr_max =      max w1signal to noise ratio
-                        w1_num_pts =      number of w1 datapoints after filtering
-                        w1_amplitude=     maximum w1mpro - minumun w1mpro from filtered data   
-                        w2_mean =         mean w2mpro from filtered data
-                        w2_mean_err =     mean w2sigmpro from filtered data
-                        w2_median =       median w2mpro from filtered data
-                        w2_median_err =   median w2sigmpro from filtered data
-                        w2_min =          minimum w2mpro from filtered data
-                        w2_min_err =      w2sigmpro for w2_min detection
-                        w2_max =          maximum w2mpro from filtered data
-                        w2_max_err =      w2sigmpro for w2_max detection
-                        w2_snr =          mean w2signal to noise ratio
-                        w2_snr_min =      min w2signal to noise ratio
-                        w2_snr_max =      max w2signal to noise ratio
-                        w2_num_pts =      number of w2 data points after filtering
-                        w2_amplitude =    maximum w2mpro - minumun w2mpro from filtered data
-                        
-                        w1_w2 =           mean w1mpro - mean w2mpro from filterd data
+
+Column Name       d_type        unit      Description
+name              object        -         Common identifier from source file. Can be used as join key.
+designation       object        -         WISE designation calculated from mean coordinates
+ra               float64        deg       Mean ra coordinates calculated from filtered data
+ra_err           float64        arcsec    Mean ra uncertainty calculated from filtered data
+dec              float64        deg       Mean dec coordinates calculated from filtered data   
+dec_err          float64        arcsec    Mean dec uncertainty calculated from filtered data
+w1_mean          float64        mag       Mean w1mpro calculated from filtered data
+w1_mean_err      float64        mag       Mean w1sigmpro calculated from filtered data
+w1_median        float64        mag       Median w1mpro calculated from filtered data
+w1_median_err    float64        mag       Median w1sigmpro calculated from filtered data
+w1_min           float64        mag       Minimum w1mpro calculated from filtered data
+w1_min_err       float64        mag       Uncertainty for w1_min
+w1_max           float64        mag       Maximum w1mpro calculated from filtered data
+w1_max_err       float64        mag       Uncertainty for w1_max
+w1_snr           float64        number    Mean S/N ratio for W1
+w1_snr_min       float64        number    Minimum S/N ratio for W1_mpro
+w1_snr_max       float64        number    Maximum S/N ratio for W1_mpro
+w1_num_pts         int64        number    Number of datapoints used in w1 after filtering
+w1_amplitude     float64        mag       Total variability in w1 from filtered data (w1_max-w1_min)
+w1_fap           float64        number    Lomb-Scargle False Alarm Probability (https://docs.astropy.org/en/stable/api/astropy.timeseries.LombScargle.html) EXPERIMENTAL STAGE 
+w1_sde           float64        number    Signal Detection Efficiency (Alcock et al. 2000, Kovacs et al. 2002)
+w1_power         float64        number    Highest relative power from signals detected W1
+w1_period        float64        days      Period matching highest detected signal from W1
+w2_mean          float64        mag       Mean w2mpro calculated from filtered data
+w2_mean_err      float64        mag       Mean w2sigmpro calculated from filtered data
+w2_median        float64        mag       Median w2mpro calculated from filtered data
+w2_median_err    float64        mag       Median w2sigmpro calculated from filtered data
+w2_min           float64        mag       Minimum w2mpro calculated from filtered data
+w2_min_err       float64        mag       Uncertainty for w2_min
+w2_max           float64        mag       Maximum w2mpro calculated from filtered data
+w2_max_err       float64        mag       Uncertainty for w2_max
+w2_snr           float64        number    Mean S/N ratio for w2
+w2_snr_min       float64        number    Minimum S/N ratio for w2_mpro
+w2_snr_max       float64        number    Maximum S/N ratio for w2_mpro
+w2_num_pts         int64        number    Amount of datapoints after filtering
+w2_amplitude     float64        mag       Total variability in w2 from filtered data (w2_max-w2_min)
+w2_fap           float64        number    Lomb-Scargle False Alarm Probability (https://docs.astropy.org/en/stable/api/astropy.timeseries.LombScargle.html) EXPERIMENTAL STAGE 
+w2_sde           float64        number    Signal Detection Efficiency (Alcock et al. 2000, Kovacs et al. 2002)
+w2_power         float64        number    Highest relative power from signals detected w2
+w2_period        float64        days      Period matching highest detected signal from w2
+w3_mean           object        mag       Mean w3mpro magnitude from l1b tables 
+w3_mean_err       object        mag       Mean w3sigmpro from l1b tables
+w3_snr            object        number    Mean w3snr from l1b tables
+w4_mean           object        mag       Mean W4mpro magnitude from l1b tables 
+w4_mean_err       object        mag       Mean w4sigmpro from l1b tables
+w4_snr            object        number    Mean w3snr from l1b tables
+w1_w2            float64        mag       W1_mpro - W2_mpro from filtered data
+delta_time       float64        days      Time between first and last data points. 
