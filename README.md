@@ -1,6 +1,10 @@
 # WISE-Light-Curves
 WISE light curves of ultra cool dwarfs analyzed with Lomb-Scargle periodogram.
 
+Source lists:   https://zenodo.org/records/4169085  
+
+This work has benefited from The UltracoolSheet at http://bit.ly/UltracoolSheet, maintained by Will Best, Trent Dupuy, Michael Liu, Rob Siverd, and Zhoujian Zhang:
+
 
 | Column Name   | d_type   | unit   | Description                                                                                         |
 |---------------|----------|--------|-----------------------------------------------------------------------------------------------------|
