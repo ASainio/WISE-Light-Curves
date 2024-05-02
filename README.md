@@ -61,7 +61,9 @@ This work has benefited from The UltracoolSheet at http://bit.ly/UltracoolSheet,
 | w1_w2         | float64  | mag    | W1_mpro - W2_mpro from filtered data.                                                                |
 | delta_time    | float64  | days   | Time between first and last data points.                                                             |
 | filter_flags  | object   | -      | Filtering flags for W1 and W2. A= Data filtered succesfully- Quality of data can be considered as good. B= Default filters returned less than 50 data points and filtering criteria was lowered to obtain more data. Quality of data should be considered unreliable. S= Filtering was skipped by user.|
+| w2_median     | float64  | mag    | https://github.com/ASainio/WISE-Light-Curves/blob/main/null-hyph.png |
 | wiseview        | object   | link | Link to WISEView (Caselden et al. 2018).                                                                     |
+
 
 
 
