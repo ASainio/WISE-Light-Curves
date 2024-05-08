@@ -13,7 +13,7 @@ Examples Baseline guesses on multiple sources:
 If eclipsing binary is detached or semi-detached guessing the baseline works well. However the curve-fit in use does not return best outcome. This lightcurve is from V1403 Orionis.
 
 
-![CSS J090826.3+123648]([https://example.com/image.jpg](https://github.com/ASainio/WISE-Light-Curves/blob/main/example_images/CSS%20J090826.3%2B123648.png))
+![CSS J090826.3+123648]((https://github.com/ASainio/WISE-Light-Curves/blob/main/example_images/CSS%20J090826.3%2B123648.png))
 If the source is symmetrical contact-binary the curve fit works well, but guessing the baseline can be wrong because amount of datapoints is similar in both minimas and maximas. Note the wrong guess on W2.
 This example is CSS J090826.3+123648. 
 
