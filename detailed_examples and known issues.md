@@ -18,7 +18,7 @@ Example above is CSS J090826.3+123648.
 
 ![Alt text](https://github.com/ASainio/WISE-Light-Curves/blob/main/null-hyph.png)
 
-The idea for guessing baseline is to be determine how many datapoints are brighter and fainter compared to baseline. This is ASASSN-21qj.
+Datapoints within range of null hypothesis, brighter and fainter counted. These are in catalog presented % totaling to 100%. Example is ASASSN-21qj where over 50% of datapoints are above the baseline indicating of brightening.
 
 
 
