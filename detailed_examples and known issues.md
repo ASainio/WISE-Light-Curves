@@ -1,8 +1,8 @@
 WISE light curves of ultra cool dwarfs analyzed with Lomb-Scargle periodogram.
 
 Hints:
-- To get statistical data of the set it would be advisable to use proper filters. Sources are visually vetted and sources with F on for given band should be discarded as their solution is failed. Some of sources can be re-run if requested. Another good filter is to set amount of datapoints >= 50 or >= 100. Also SNR is considered to be a good filter.
-- When plotting the data it is adviceable to inspect outliers as some might blended sources might remain. 
+- To get statistical data of the set it would be advisable to use proper filters. Sources are visually vetted and sources with "F" for given band should be discarded as their solution is failed for some reason. Some of failed sources can be re-run if requested, if it is software issues rather than blending or bad signal to noise ration. Another good filter is to set amount of datapoints >= 50 or >= 100. Also SNR is considered to be a good filter.
+- When plotting the data one should inspect outliers as some blended sources might remain. 
 
 Known issues:
 - Colormap contains only 20 colors and currently there are 23 epochs. Therefor some epochs use same color. These are first epochs, most center epochs and last epochs.
