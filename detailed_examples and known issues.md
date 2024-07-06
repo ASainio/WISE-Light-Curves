@@ -5,6 +5,11 @@ Known issues:
 
 - Baseline is a guess based on which magnitude has most datapoints covering 0-hypothesis range. In attached eclipsing binary system it is possible that amount of datapoints on each magnitude is about the same. 
 
+Something to add:
+- Use SNR limit when running target list. It will save a lot of work when vetting results.
+- Edit metadata posted on figures: SNR? Amount of original datapoints without filtering? PM? Remove W3 and W4?
+- Print amount of epochs!
+
 Examples:
 
 ![V1403_Orionis](https://github.com/ASainio/WISE-Light-Curves/blob/main/example_images/V1403_Orionis.png)
