@@ -1,15 +1,14 @@
 WISE light curves of ultra cool dwarfs analyzed with Lomb-Scargle periodogram.
 
 Hints:
-- To get statistical data of the set it would be advisable to use proper filters. Light curves are visually vetted and sources with "F" for given band should be discarded as their solution is failed for some reason. Some of failed sources can be re-run if requested. Another good filter is to set amount of datapoints >= 50 or >= 100. Also SNR is considered to be a good filter.
-- When plotting the data one should inspect outliers as some blended sources might remain. 
+- To get useable data of this set it would be advisable to use filters. Light curves are visually vetted and sources with "F" for given band should be discarded. However outliers migh remain in the sample. Another good filter is to set amount of datapoints >= 50 or >= 100. One might want to filter out low SNR and overluminous sources. 
 
 Known issues:
 - Colormap contains only 20 colors and currently there are 23 epochs. Therefor some epochs use same color. These are first epochs, most center epochs and last epochs.
+- Light curves in first release aren't flattened by epoch before periodogram. There are cases where source moves from or towards brighter star and that causes epochs to be on different levels. This decision was made based on LS-periodogram testing on known sources. 
+- Baseline is a guess based on what magnitude has most datapoints covering 0-hypothesis range. 
 
-- Baseline is a guess based on which magnitude has most datapoints covering 0-hypothesis range. In attached eclipsing binary system it is possible that amount of datapoints on each magnitude is about the same. 
-
-Something to add:
+Improvements for future updates:
 - Use SNR limit when running target list. It will save a lot of work when vetting results.
 - Edit metadata posted on figures: SNR? Amount of original datapoints without filtering? PM? Remove W3 and W4?
 - Print amount of epochs!
