@@ -12,6 +12,7 @@ Improvements for future updates:
 - Use SNR limit when running target list. It will save a lot of work when vetting results.
 - Edit metadata posted on figures: SNR? Amount of original datapoints without filtering? PM? Remove W3 and W4?
 - Print amount of epochs!
+- Print version nro.
 
 Examples:
 
